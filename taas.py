@@ -7,7 +7,7 @@ app = Flask(__name__)
 api = restful.Api(app)
 cors = CORS(app)
 
-api.add_resource(clicks.ClickButton, '/1/click/button')
+api.add_resource(clicks.Click, '/1/click')
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True)

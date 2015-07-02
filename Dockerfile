@@ -36,7 +36,7 @@ RUN ln -sf /usr/local/share/casperjs-latest/bin/casperjs /usr/bin/casperjs
 
 RUN pip install -r requirements.txt
 
-EXPOSE 5000:5000
+EXPOSE 5000
 
 # Run
 CMD python taas.py 
